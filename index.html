@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Quincaillerie (MDQ) | Matériaux de Construction & Outils</title>
+    <meta name="description" content="Spécialiste en quincaillerie, matériaux de construction, plomberie et outils à Ouagadougou">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Barre contact -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> <strong>72 70 51 19 / 66 78 79 63 / 68 25 18 50</strong></span>
+                <span><i class="fab fa-whatsapp"></i> WhatsApp disponible</span>
+                <span><i class="fas fa-envelope"></i> massoud17.guigma@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-image">
+                    <div style="width:60px;height:60px;background:#e67e22;color:white;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;">MDQ</div>
+                </div>
+                <div class="logo-text">
+                    <h1>MAISON DE QUINCAILLERIE</h1>
+                    <p class="tagline">Matériaux de construction & Outils professionnels</p>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#accueil" class="nav-link active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#produits" class="nav-link"><i class="fas fa-tools"></i> Produits</a>
+                <a href="#services" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+                <a href="#apropos" class="nav-link"><i class="fas fa-info-circle"></i> À propos</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-map-marker-alt"></i> Contact</a>
+                <a href="https://wa.me/22672705119" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Commander</a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero" id="accueil">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">
+                    <span class="line">VOTRE SPÉCIALISTE EN</span>
+                    <span class="line highlight">MATÉRIAUX DE CONSTRUCTION</span>
+                </h2>
+                <p class="hero-subtitle">Matériaux de qualité, outils professionnels et conseils experts pour tous vos projets</p>
+                
+                <div class="hero-features">
+                    <div class="feature"><i class="fas fa-check-circle"></i> <span>Produits de qualité</span></div>
+                    <div class="feature"><i class="fas fa-shipping-fast"></i> <span>Livraison sur demande</span></div>
+                    <div class="feature"><i class="fas fa-headset"></i> <span>Conseils professionnels</span></div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#produits" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Voir nos produits</a>
+                    <a href="https://wa.me/22672705119" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Commander sur WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section class="products-section" id="produits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Catégories de Produits</h2>
+                <p class="section-subtitle">Large gamme de produits de qualité pour tous vos besoins</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-category">
+                    <div class="category-icon"><i class="fas fa-faucet"></i></div>
+                    <h3>Plomberie & Sanitaire</h3>
+                    <ul class="product-list">
+                        <li>Tuyaux PVC et cuivre</li>
+                        <li>Robinetterie</li>
+                        <li>Équipements WC</li>
+                        <li>Siphons et raccords</li>
+                    </ul>
+                    <a href="#contact" class="category-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Outils Professionnels</h3>
+                    <ul class="product-list">
+                        <li>Perceuses et visseuses</li>
+                        <li>Marteaux et pinces</li>
+                        <li>Mètres et niveaux</li>
+                        <li>Équipement de sécurité</li>
+                    </ul>
+                    <a href="#contact" class="category-link">Consulter le stock <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3>Peinture & Revêtements</h3>
+                    <ul class="product-list">
+                        <li>Peintures intérieur/extérieur</li>
+                        <li>Enduits et apprêts</li>
+                        <li>Pinceaux et rouleaux</li>
+                        <li>Vernis et lasures</li>
+                    </ul>
+                    <a href="#contact" class="category-link">Voir les couleurs <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>Matériaux Construction</h3>
+                    <ul class="product-list">
+                        <li>Ciments et agrégats</li>
+                        <li>Fers à béton</li>
+                        <li>Briques et parpaings</li>
+                        <li>Goudron pour toiture</li>
+                    </ul>
+                    <a href="#contact" class="category-link">Demander prix <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Services</h2>
+                <p class="section-subtitle">Au-delà de la vente, nous vous accompagnons</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-icon"><i class="fas fa-comments-dollar"></i></div>
+                    <h3>Conseil & Devis Gratuit</h3>
+                    <p>Nos experts vous conseillent et établissent un devis détaillé sans engagement.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-icon"><i class="fas fa-truck-loading"></i></div>
+                    <h3>Livraison sur Site</h3>
+                    <p>Service de livraison rapide sur votre chantier à Ouagadougou.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Stock Permanent</h3>
+                    <p>Entrepôt toujours approvisionné pour disponibilité immédiate.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Services Professionnels</h3>
+                    <p>Conditions spéciales pour entreprises et artisans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about-section" id="apropos">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="section-title">Pourquoi Choisir MDQ ?</h2>
+                
+                <div class="about-text">
+                    <p><strong>Maison de Quincaillerie (MDQ)</strong> est votre partenaire de confiance pour tous vos projets de construction à Ouagadougou.</p>
+                    <p>Nous fournissons des matériaux de qualité, outils professionnels, équipements de plomberie, peintures et quincaillerie générale.</p>
+                    <p>Notre mission : vous fournir les meilleurs produits aux prix compétitifs avec conseils d'experts.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="500">0</h3>
+                        <p>Références produits</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="1000">0</h3>
+                        <p>Clients satisfaits</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="8">0</h3>
+                        <p>Années d'expérience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA WhatsApp -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="cta-text">
+                    <h2>Commandez sur WhatsApp !</h2>
+                    <p>Envoyez-nous votre liste et recevez un devis instantané</p>
+                </div>
+                <div class="cta-button">
+                    <a href="https://wa.me/22672705119?text=Bonjour%20MDQ,%20je%20souhaite%20commander%20des%20produits" 
+                       class="btn btn-whatsapp-large" target="_blank"><i class="fab fa-whatsapp"></i> Commander maintenant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nous Trouver</h2>
+                <p class="section-subtitle">Visitez-nous ou contactez-nous</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h3>Notre Magasin</h3>
+                            <p>Ouagadougou, Burkina Faso</p>
+                            <p>Coordonnées: 12.360918, -1.520902</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h3>Téléphone & WhatsApp</h3>
+                            <p><strong>72 70 51 19</strong></p>
+                            <p><strong>66 78 79 63</strong></p>
+                            <p><strong>68 25 18 50</strong></p>
+                            <a href="https://wa.me/22672705119" class="whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>massoud17.guigma@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-details">
+                            <h3>Horaires d'Ouverture</h3>
+                            <p><strong>Lun-Ven:</strong> 7h30 - 18h30</p>
+                            <p><strong>Samedi:</strong> 8h00 - 16h00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-frame">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15799.289246957197!2d-1.5234806!3d12.360918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDIxJzM5LjMiTiAxwrAzMScxNS4zIlc!5e0!3m2!1sfr!2sbf!4v1620000000000!5m2!1sfr!2sbf" 
+                                width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-small">
+                            <div style="width:40px;height:40px;background:#e67e22;color:white;display:flex;align-items:center;justify-content:center;font-weight:bold;">MDQ</div>
+                            <span>MDQ</span>
+                        </div>
+                        <p class="footer-description">Votre partenaire en quincaillerie et matériaux de construction à Ouagadougou.</p>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Nos Produits</h4>
+                    <ul class="footer-links">
+                        <li><a href="#produits">Plomberie & Sanitaire</a></li>
+                        <li><a href="#produits">Outils Professionnels</a></li>
+                        <li><a href="#produits">Peinture & Revêtements</a></li>
+                        <li><a href="#produits">Matériaux Construction</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Rapide</h4>
+                    <div class="contact-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> Ouagadougou</p>
+                        <p><i class="fas fa-phone"></i> 72 70 51 19</p>
+                        <p><i class="fab fa-whatsapp"></i> 66 78 79 63</p>
+                        <p><i class="fas fa-envelope"></i> massoud17.guigma@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maison de Quincaillerie (MDQ). Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <a href="https://wa.me/22672705119" class="float-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
